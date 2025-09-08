@@ -38,12 +38,40 @@ Puedes instalarlas con `pip` (ver más abajo).
 
 ------------------------------------------------------------------------
 
+## 🐍 Instalación de Python y pip
+
+### Windows / macOS / Linux
+
+1.  Descarga e instala [Python](https://www.python.org/downloads/).\
+    Asegúrate de marcar la opción **"Add Python to PATH"** en Windows.
+
+2.  Verifica la instalación:
+
+    ``` bash
+    python --version
+    ```
+
+3.  Si `pip` no está instalado, puedes instalarlo con:
+
+    ``` bash
+    curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+    python3 get-pip.py
+    ```
+
+4.  Confirma que `pip` quedó disponible:
+
+    ``` bash
+    pip --version
+    ```
+
+------------------------------------------------------------------------
+
 ## 🚀 Inicio rápido
 
 ### 1) Clonar el repo
 
 ``` bash
-git https://github.com/jparadagt/USS_AV_202515_INGO0002_4276.git
+git clone https://github.com/jparadagt/USS_AV_202515_INGO0002_4276.git
 cd USS_AV_202515_INGO0002_4276
 ```
 
@@ -174,6 +202,13 @@ equivocadas. - En Windows: Panel de control → *Administrador de
 credenciales* → elimina entradas de `github.com`. - Vuelve a hacer push
 e inicia sesión con tu usuario correcto, o usa **SSH**.
 
+------------------------------------------------------------------------
+
+## 🔐 Seguridad
+
+-   No subas tu `secrets.toml` al repo.\
+-   No hardcodees el API Key en el código; usa `st.secrets` o variables
+    de entorno.
 
 ------------------------------------------------------------------------
 
